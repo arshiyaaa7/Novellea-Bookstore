@@ -57,17 +57,7 @@ Novellea is a book-selling e-commerce system built using a microservices archite
 - `users/` → Basic CRUD and authentication (in progress)
 
 ---
-## 📂 Project Structure (Monorepo)
-
-Novellea-Bookstore/
-├── users/              # User microservice ✅
-├── books/              # Book catalog microservice (planned)
-├── orders/             # Order management microservice (planned)
-├── config-server/      # Centralized config (planned)
-├── discovery-server/   # Eureka service discovery (planned)
-├── api-gateway/        # API Gateway routing (planned)
-└── README.md
-
+<pre><code> Novellea-Bookstore/ ├── users/ # User microservice ✅ ├── books/ # Book catalog microservice (planned) ├── orders/ # Order management microservice (planned) ├── config-server/ # Centralized config (planned) ├── discovery-server/ # Eureka service discovery (planned) ├── api-gateway/ # API Gateway routing (planned) └── README.md </code></pre>
 ---
 
 ## 📌 Technologies & Tools
