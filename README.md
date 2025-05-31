@@ -1,4 +1,4 @@
-# 📚 Novellea Bookstore - Microservices E-commerce Backend
+# 📚 Novellea Bookstore - E-commerce Project
 
 **"Stories wrapped in grace"**
 
