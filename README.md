@@ -2,7 +2,7 @@
 
 **"Stories wrapped in grace"**
 
-Novellea is a book-selling e-commerce system built using a microservices architecture with Spring Boot. This project is under active development by an undergraduate intern with a vision to create an Amazon-style virtual bookstore. The primary focus is on building the backend system using real-world architecture practices with RESTful microservices.
+Novellea is a book-selling e-commerce system built using a microservices architecture with Spring Boot. This project is under active development by an undergraduate student with a vision to create an Amazon-style virtual bookstore. The primary focus is on building the backend system using real-world architecture practices with RESTful microservices.
 
 ---
 
