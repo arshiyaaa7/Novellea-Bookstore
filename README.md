@@ -74,6 +74,6 @@ This project is a work in progress and will be developed incrementally as per th
 ---
 
 ## 🙋‍♀️ About
-This repository is maintained by an undergraduate student building their first scalable, production-ready backend system under mentorship.
+This repository is maintained by an undergraduate student building their first scalable, production-ready full stack system focused on backend.
 
 
