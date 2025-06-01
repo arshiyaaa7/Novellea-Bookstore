@@ -71,9 +71,4 @@ will be updated later.
 ## 🚧 Status
 This project is a work in progress and will be developed incrementally as per the roadmap above. Each microservice will be independently deployable and dockerized.
 
----
-
-## 🙋‍♀️ About
-This repository is maintained by an undergraduate student building their first scalable, production-ready full stack system focused on backend.
-
 
