@@ -1,0 +1,27 @@
+# Ignore compiled classes and build output
+target/
+*.class
+
+# Java archives
+*.jar
+*.war
+
+# Maven
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Spring specific
+.env
+application.properties

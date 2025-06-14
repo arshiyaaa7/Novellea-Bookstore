@@ -16,4 +16,6 @@ public interface UserService {
     // Wishlist support
     List<String> getWishlistByUserId(Long id);
     List<String> updateWishlist(Long id, List<String> wishlist);
+
+//    List<User> getAllUsers();
 }
