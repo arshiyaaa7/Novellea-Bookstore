@@ -75,7 +75,9 @@ Will be updated later.
 ---
 ## Images 
 ![Novellea](https://github.com/user-attachments/assets/43b000ba-5f5a-45d7-8e21-962ed632c1d8)
+![catalog](https://github.com/user-attachments/assets/417141ed-75c9-4cb8-865c-4d39f3d16d45)
 
 ---
 ## 🚧 Status
 This project is a work in progress and will be developed incrementally as per the roadmap above. Each microservice is independently deployable and uses Supabase as the shared production-grade database platform. The frontend is custom-built and connected manually by the developer to the backend services.
+
