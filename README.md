@@ -9,8 +9,8 @@ Novellea is a book-selling e-commerce system built using a microservices archite
 ## 🧭 Roadmap (Beginner-Friendly Milestones)
 
 ### 🔧 Phase 0: Tooling & Setup
-- Java 17+, Spring Boot, Maven, Git/GitHub, Docker
-- PostgreSQL/MySQL, Postman, IntelliJ
+- Java 17+, Spring Boot, Maven, Git/GitHub, Docker (for services only)
+- Supabase PostgreSQL DB (remote), Postman, IntelliJ
 - Understand monolith vs. microservices
 
 ### 🏗️ Phase 1: Architecture & Project Skeleton
@@ -28,10 +28,12 @@ Novellea is a book-selling e-commerce system built using a microservices archite
 ### 👤 Phase 2: User Microservice (WIP)
 - User registration/login (with BCrypt)
 - CRUD, DTOs, Controllers, JPA
+- Wishlist management
 
 ### 📚 Phase 3: Book Catalog
 - Add/search/manage books
 - JPA queries, pagination, filtering
+- Review system (one-to-many)
 
 ### 🛒 Phase 5: Cart & Orders
 - Add to cart, checkout, track orders
@@ -43,32 +45,39 @@ Novellea is a book-selling e-commerce system built using a microservices archite
 ### 🔐 Phase 7: Security (Planned)
 - JWT Auth or Spring Security (Admin/User roles)
 
-### 💻 Phase 8: Simple Frontend (Planned)
-- Basic React or HTML/CSS for testing APIs
+### 💻 Phase 8: Frontend Integration (In Progress)
+- Frontend built using modern AI-assisted workflows (e.g., Vercel + React + Tailwind CSS)
+- All backend connections and API integration handled manually
+- Fully custom-designed UI optimized for a bookstore experience
 
-### 🚀 Phase 9: Deployment
-- Dockerize services
-- Docker Compose setup
-- Optional cloud deployment (Render/Railway/EC2)
+### 🚀 Phase 9: Deployment (To Be Decided)
+- Deployment platform and strategy will be finalized after full backend completion.
 
 ---
 
 ## 🛠️ Current Services
-- `users/` → Basic CRUD and authentication (in progress)
+- `users/` → Basic CRUD, authentication, wishlist (in progress)
+- `books/` → Catalog management and review support (in progress)
 
 ---
+
 ## 📂 Project Structure (Monorepo)
-will be updated later.
+Will be updated later.
+
 ---
 
 ## 📌 Technologies & Tools
 - Spring Boot, Spring Cloud, Spring Data JPA
-- PostgreSQL, H2 (dev), Lombok, Feign, Docker
+- Supabase PostgreSQL, H2 (for local testing), Lombok, Feign, Docker
 - GitHub Actions (planned), Swagger (planned)
+- React + Tailwind CSS + Vercel (Frontend with AI-assisted tooling)
 
 ---
+## Images 
+![Novellea](https://github.com/user-attachments/assets/43b000ba-5f5a-45d7-8e21-962ed632c1d8)
+![catalog](https://github.com/user-attachments/assets/417141ed-75c9-4cb8-865c-4d39f3d16d45)
 
+---
 ## 🚧 Status
-This project is a work in progress and will be developed incrementally as per the roadmap above. Each microservice will be independently deployable and dockerized.
-
+This project is a work in progress and will be developed incrementally as per the roadmap above. Each microservice is independently deployable and uses Supabase as the shared production-grade database platform. The frontend is custom-built and connected manually by the developer to the backend services.
 
