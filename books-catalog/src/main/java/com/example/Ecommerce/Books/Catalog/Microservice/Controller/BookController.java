@@ -48,14 +48,13 @@ public class BookController {
         }
     }
 
-    //5. Get all books
     @GetMapping
     public ResponseEntity<List<Book>> getAllBooks() {
         return ResponseEntity.ok(bookServices.getAllBooks());
     }
 
     //6. Search books by title
-    @GetMapping("/search")
+    @GetMapping("/search/title")
     public ResponseEntity<List<Book>> searchBookByTitle(@RequestParam String title) {
         return ResponseEntity.ok(bookServices.searchBookByTitle(title));
     }
@@ -117,5 +116,20 @@ public class BookController {
     @GetMapping("/{bookId}/reviews")
     public ResponseEntity<List<Review>> getReviews(@PathVariable Long bookId) {
         return ResponseEntity.ok(bookServices.getReviewsByBookId(bookId));
+    }
+
+    @GetMapping("/bestsellers")
+    public ResponseEntity<List<Book>> getBestsellers() {
+        return ResponseEntity.ok(bookServices.getBestsellers());
+    }
+
+    @GetMapping("/featured")
+    public ResponseEntity<List<Book>> getFeaturedBooks() {
+        return ResponseEntity.ok(bookServices.getFeaturedBooks());
+    }
+
+    @GetMapping("/popular")
+    public ResponseEntity<List<Book>> getPopularBooks() {
+        return ResponseEntity.ok(bookServices.getPopularThisWeek());
     }
 }

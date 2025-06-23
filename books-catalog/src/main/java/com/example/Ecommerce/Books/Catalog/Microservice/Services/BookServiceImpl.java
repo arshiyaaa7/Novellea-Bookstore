@@ -109,4 +109,20 @@ public class BookServiceImpl implements BookServices {
     public List<Review> getReviewsByBookId(Long bookId) {
         return reviewRepo.findByBook_Id(bookId);
     }
+
+    @Override
+    public List<Book> getBestsellers() {
+        return bookRepo.findByBestsellerTrue();
+    }
+
+    @Override
+    public List<Book> getFeaturedBooks() {
+        return bookRepo.findByFeaturedTrue();
+    }
+
+    @Override
+    public List<Book> getPopularThisWeek() {
+        return bookRepo.findTop4ByOrderByWeeklySalesDesc();
+    }
+
 }

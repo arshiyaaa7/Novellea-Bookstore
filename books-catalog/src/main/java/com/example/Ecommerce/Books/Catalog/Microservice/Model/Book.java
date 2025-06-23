@@ -34,4 +34,14 @@ public class Book {
     @JoinColumn(name = "book_id") // foreign key in Review table
     private List<Review> reviews = new ArrayList<>();
 
+    @Column(nullable = false)
+    private boolean bestseller = false;
+
+    @Column(nullable = false)
+    private boolean featured = false;
+
+    @Column(nullable = false)
+    private int weeklySales = 0;
+
+
 }

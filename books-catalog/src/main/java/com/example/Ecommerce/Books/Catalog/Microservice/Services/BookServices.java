@@ -21,4 +21,7 @@ public interface BookServices {
     List<Book> sortByPriceRange(double minPrice, double maxPrice);
     Review addReviewToBook(Long bookId, Review review);
     List<Review> getReviewsByBookId(Long bookId);
+    List<Book> getBestsellers();
+    List<Book> getFeaturedBooks();
+    List<Book> getPopularThisWeek();
 }

@@ -16,4 +16,7 @@ public interface BookRepo extends JpaRepository<Book, Long> {
     List<Book> findAllByOrderByPriceAsc();
     List<Book> findAllByOrderByPriceDesc();
     List<Book> findByPriceBetween(double minPrice, double maxPrice);
+    List<Book> findByBestsellerTrue();
+    List<Book> findByFeaturedTrue();
+    List<Book> findTop4ByOrderByWeeklySalesDesc();
 }
