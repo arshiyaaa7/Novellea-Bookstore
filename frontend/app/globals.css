@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --vintage-paper: #f8f6f3;
+    --soft-ivory: #faf9f7;
+    --dusty-rose: #c4a484;
+    --deep-maroon: #4a3728;
+    --muted-plum: #6b5b73;
+    --charcoal: #2d2d2d;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .bg-vintage-paper {
+    background-color: #f8f6f3;
+  }
+
+  .bg-soft-ivory {
+    background-color: #faf9f7;
+  }
+
+  .bg-dusty-rose {
+    background-color: #c4a484;
+  }
+
+  .text-deep-maroon {
+    color: #4a3728;
+  }
+
+  .text-muted-plum {
+    color: #6b5b73;
+  }
+
+  .text-dusty-rose {
+    color: #c4a484;
+  }
+
+  .border-dusty-rose {
+    border-color: #c4a484;
+  }
+
+  .glassmorphism {
+    background: rgba(248, 246, 243, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(196, 164, 132, 0.18);
+  }
+
+  .elegant-gradient {
+    background: linear-gradient(135deg, #4a3728 0%, #6b5b73 50%, #c4a484 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Enhanced text rendering for crisp typography */
+  .font-playfair {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
