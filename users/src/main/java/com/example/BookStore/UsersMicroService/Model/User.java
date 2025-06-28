@@ -15,7 +15,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String token;
+    private String refreshtoken;
     private String name;
 
     @Column

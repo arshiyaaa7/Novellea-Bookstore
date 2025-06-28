@@ -17,8 +17,15 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<User> createUser(@RequestBody User user){
-        return ResponseEntity.ok(userService.saveUser(user));
+    public ResponseEntity<Map<String, Object>> createUser(@RequestBody User user) {
+        User savedUser = userService.saveUser(user);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("user", savedUser);
+        response.put("token", generateMockToken(savedUser));
+        response.put("refreshToken", generateMockRefreshToken(savedUser));
+
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/login")
@@ -28,11 +35,34 @@ public class UserController {
 
         User user = userService.getUserByEmail(email);
         if (user != null && user.getPassword().equals(password)) {
-            return ResponseEntity.ok(user);
+            Map<String, Object> response = new HashMap<>();
+            response.put("user", user);
+            response.put("token", generateMockToken(user));
+            response.put("refreshToken", generateMockRefreshToken(user));
+            return ResponseEntity.ok(response);
         } else {
             return ResponseEntity.status(401).body("Invalid email or password");
         }
     }
+
+
+//    @PostMapping("/register")
+//    public ResponseEntity<User> createUser(@RequestBody User user){
+//        return ResponseEntity.ok(userService.saveUser(user));
+//    }
+//
+//    @PostMapping("/login")
+//    public ResponseEntity<?> loginUser(@RequestBody Map<String, String> credentials) {
+//        String email = credentials.get("email");
+//        String password = credentials.get("password");
+//
+//        User user = userService.getUserByEmail(email);
+//        if (user != null && user.getPassword().equals(password)) {
+//            return ResponseEntity.ok(user);
+//        } else {
+//            return ResponseEntity.status(401).body("Invalid email or password");
+//        }
+//    }
 
 //    @GetMapping
 //    public ResponseEntity<List<User>> getAllUsers(){
@@ -68,4 +98,13 @@ public class UserController {
     public ResponseEntity<String> getOrderHistoryPlaceholder(@PathVariable Long id) {
         return ResponseEntity.ok("Order history will be handled by Order Microservice");
     }
+
+    private String generateMockToken(User user) {
+        return "mock-jwt-token-" + user.getId() + "-" + System.currentTimeMillis();
+    }
+
+    private String generateMockRefreshToken(User user) {
+        return "mock-refresh-token-" + user.getId() + "-" + System.currentTimeMillis();
+    }
+
 }
