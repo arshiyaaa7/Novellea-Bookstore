@@ -143,6 +143,13 @@ Novellea started as a learning-driven project by an undergraduate student to **u
 ---
 
 ## Images 
+**Microservices Architecture**
+<img width="3870" height="2963" alt="Novellea Microservices Architecture" src="https://github.com/user-attachments/assets/f8608512-9b2d-48f8-b431-61ea325421ba" />
+
+**Application WorkFlow**
+<img width="3227" height="903" alt="Novellea Simplified Demo Flow" src="https://github.com/user-attachments/assets/3e681394-681c-4b6a-829c-d2a4397be63d" />
+
+**Frontend**
 ![Novellea](https://github.com/user-attachments/assets/43b000ba-5f5a-45d7-8e21-962ed632c1d8)
 ![catalog](https://github.com/user-attachments/assets/417141ed-75c9-4cb8-865c-4d39f3d16d45)
 
@@ -150,7 +157,5 @@ Novellea started as a learning-driven project by an undergraduate student to **u
 ## 💬 Author  
 
 👩‍💻 **Developed by:** Arshiya Shaikh  
-🎓 **Role:** Undergraduate | Full Stack Developer | System Design Enthusiast  
-🚀 **Goal:** Build real-world, production-grade systems while learning scalable architecture patterns  
 
 > _“Stories wrapped in grace — where code meets creativity.”_  
